@@ -1,0 +1,36 @@
+
+.header .logo {
+    margin-right: auto;
+    margin-left: 0;
+    background-color: #ec060660;
+    padding: 1em 2em;
+    border-radius: 3em;
+    color: #fcfcfc;
+}
+
+.header .nav-links {
+    display: flex;
+    place-items: center;
+}
+
+.nav-links li {
+    list-style: none;
+    margin-inline: .75em;
+    font-size: 1.25em;
+    border-radius: 1em;
+    padding: .5em .75em;
+    transition: .25s all;
+}
+
+.active-link {
+    background-color: #ec060660;
+}
+
+.nav-links li:hover {
+    border-radius: 1em;
+    padding: .5em .75em;
+    cursor: pointer;
+    background-color: #ec060660;
+    /* color: #242424; */
+    filter: 0 0 2em #d1cccc60;
+}
