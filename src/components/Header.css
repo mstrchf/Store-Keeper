@@ -18,19 +18,17 @@
     margin-inline: .75em;
     font-size: 1.25em;
     border-radius: 1em;
-    padding: .5em .75em;
+    padding: .5em 1em;
     transition: .25s all;
 }
 
 .active-link {
-    background-color: #ec060660;
+    background-color: #79797977;
 }
 
 .nav-links li:hover {
     border-radius: 1em;
-    padding: .5em .75em;
+    padding: .5em 1em;
     cursor: pointer;
-    background-color: #ec060660;
-    /* color: #242424; */
-    filter: 0 0 2em #d1cccc60;
+    background-color: #79797938;
 }

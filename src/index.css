@@ -67,7 +67,7 @@ transform: scale(1.2);
 
  .icon {
   font-size: 2em;
-  color: #04ff7578;
+  color: #797979d3;
   transition: .5s transform;
 }
 
@@ -84,7 +84,7 @@ a.active {
 }
 
 .main {
-  background-color: #74ffb38e;
+  background-color: #408ff071;
   grid-column: 2 / -1;
   /* height: 75vh; */
   padding: 2em;
