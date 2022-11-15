@@ -32,14 +32,14 @@
 }
 
 .side-bar {
-  background-color: #408ff071;
+  background-color: #40f08f50;
   grid-column: 1 / 2;
-  border-radius: 3em;
+  border-radius: 3.2em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 1em;
-  padding: 1em;
+  gap: 1.2em;
+  padding: 1.2em;
   color: rgba(255, 255, 255, 0.87);
   height: fit-content;
 }
@@ -52,39 +52,41 @@
   display: flex;
   align-items: center;
   gap: 1em;
+  color: #ffffffb7;
   /* transition: 0.5s all; */
 }
 
 .side-bar a:hover {
   cursor: pointer;
-  outline: 2px solid #74ffb38e;
+  /* outline: 2px solid #ffffffcc; */
 }
 
 .side-bar a:hover .icon {
-transform: scale(1.2);
-
+  transform: scale(1.2);
 }
 
- .icon {
+.icon {
   font-size: 2em;
   color: #797979d3;
-  transition: .5s transform;
+  transition: 0.5s transform;
 }
 
 .icon-active {
   transform: rotate(90deg);
-  color: #242424;
+  color: #ffffffcc;
 }
 
 a.active {
-  background-color: #04ff7578;
-  color: #242424;
-  /* outline: 2px solid #242424; */
+  background-color: #40f0491f;
+  font-weight: bold;
+  box-shadow: 0 0 16px 5px #24242459;
+  color: #ffffffcc;
 
+  /* outline: 2px solid #ffffffcc; */
 }
 
 .main {
-  background-color: #408ff071;
+  background-color: #408ff050;
   grid-column: 2 / -1;
   /* height: 75vh; */
   padding: 2em;
@@ -169,7 +171,7 @@ tr {
   border-radius: 2.5em;
   color: #242424;
   /* height: 30vh; */
-  background-color: #fdff748e;
+  background-color: #fdff7450;
   grid-column: 1 / -1;
 }
 
@@ -193,13 +195,12 @@ button:hover {
   filter: 0 0 2em #0671ec;
 }
 
-
 .main-icon {
   font-size: 1.2em;
   margin-right: 0.5em;
 }
 
-@media screen and (max-width: 820px)  {
+@media screen and (max-width: 820px) {
   .App {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -215,7 +216,7 @@ button:hover {
   }
 
   .side-bar a {
-    gap: .5em;
+    gap: 0.5em;
     align-items: center;
     justify-content: center;
   }
@@ -229,7 +230,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 720px)  {
+@media screen and (max-width: 720px) {
   .App {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -261,5 +262,3 @@ button:hover {
     grid-column: 1 / -1;
   }
 }
-
-

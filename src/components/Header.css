@@ -1,8 +1,8 @@
 
 .header .logo {
     margin-right: auto;
-    margin-left: 0;
-    background-color: #ec060660;
+    /* margin-left: 1em; */
+    background-color: #ec060650;
     padding: 1em 2em;
     border-radius: 3em;
     color: #fcfcfc;
@@ -15,7 +15,7 @@
 
 .nav-links li {
     list-style: none;
-    margin-inline: .75em;
+    margin-inline: .25em;
     font-size: 1.25em;
     border-radius: 1em;
     padding: .5em 1em;
