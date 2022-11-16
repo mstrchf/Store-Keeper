@@ -13,7 +13,7 @@ function Rows({ item }) {
   );
 }
 
-function Invoices() {
+function Invoices({openModal}) {
   const [items] = React.useState(data);
 
   console.log();
@@ -22,7 +22,7 @@ function Invoices() {
     <div>
       <div className="main-top">
         <h1>Invoices</h1>
-        <button >
+        <button onClick={openModal} >
           <BsFillPlusCircleFill className="main-icon" /> Add
         </button>
       </div>

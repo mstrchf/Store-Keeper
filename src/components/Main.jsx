@@ -5,9 +5,10 @@ import Dashboard from './section/Dashboard'
 import Categories from './section/Categories'
 import Settings from './section/Settings'
 
-let items = [<Dashboard /> ,<Products />, <Categories />, <Invoices />, <Settings />];
 
-function Main({ sections }) {
+function Main({ sections, openModal }) {
+let items = [<Dashboard /> ,<Products openModal={openModal} />, <Categories openModal={openModal} />, <Invoices openModal={openModal}  />, <Settings />];
+
   return (
     <div className="main">
       {sections.map(section => {

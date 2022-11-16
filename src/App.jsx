@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Side from "./components/Side";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
+import AddItemModal from "./components/util/AddItemModal";
+
 import {
   AiFillDashboard,
   AiFillSetting,
@@ -22,6 +24,15 @@ let data = [
 
 function App() {
   const [sections, setSections] = useState(data);
+  const [isOpen, setIsOpen] = useState(false)
+
+  function closeModal() {
+    setIsOpen(false)
+  }
+
+  function openModal() {
+    setIsOpen(true)
+  }
 
   function setActive(id) {
     console.log("section id: " + id);
@@ -42,9 +53,10 @@ function App() {
 
   return (
     <div className="App">
+      <AddItemModal isOpen={isOpen} closeModal={closeModal} />
       <Header />
       <Side sections={sections} setActive={setActive} />
-      <Main sections={sections}/>
+      <Main openModal={openModal} sections={sections}/>
       <Footer />
     </div>
   );
